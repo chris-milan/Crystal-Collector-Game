@@ -5,18 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crystals Collector Game | Chris Milan</title>
+    <title>Crystals Collector | Chris Milan</title>
+    
 
+
+<link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <h1>Crystals Collector!</h1>
+<audio id="music" autoplay loop>
+      <source src="assets/music/Deru-1979.m4a") type="audio/mp4" />
+    </audio>
+    
+<div class="mainContainer">
+    <h1>Crystals Collector</h1>
+        <div class="instructionsContainer">
+            
+            <p>A Random Number in Red generates in the middle.</p>
+            <p>There are Four Crystals below.  Each crystal contains a Hidden Number Value.</p>  
+            <p>By clicking on one of the Crystals you will add that Value to your Current Number in Blue.</p>
+            <p>You win the game by matching your Current Number to the Random Number.</p>
+            <p>You lose the game if your Current Number goes above the Random Number.</p>
+            <p>Upon winning or losing, the game will change the Values of each Crystal.</p>
+
+        </div>
+
+    
+    <div class="container">
+      <div class="row">
+              <div id="scoreContainer" class="col-4"> 
+                        <p id="total"></p>
+                        <p id="current"></p>
+                </div>
+            <div id="randomNumber" class="col-4"></div>
+                <div id="winLossContainer" class="col-4">
+                   
+                    <div id="wins">Wins: 0</div>
+                    <div id="losses">Losses: 0</div>
+                </div>
+
+            <div class="crystalsContainer"> 
+
+                    <img id="redCrystal" class="crystalImages" src="assets/images/red-crystal.jpg">
+
+                    <img id="blueCrystal" class="crystalImages" src="assets/images/blue-crystal.jpg">
+
+                    <img id="yellowCrystal" class="crystalImages" src="assets/images/yellow-crystal.jpg">
+
+                    <img id="greenCrystal" class="crystalImages" src="assets/images/green-crystal.jpg">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </body>
-<script src="assets/javascript/game.js">
-  
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js">
+     var audio= document.getElementById("music");
+          audio.volume = 0.3;
+    </script>
+
 
 </html>

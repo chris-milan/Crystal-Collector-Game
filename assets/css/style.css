@@ -1,0 +1,71 @@
+body {
+    background: url(../images/background-crystal-cave.jpg) no-repeat center center fixed;
+    /*forcing bg to maintain a full screen*/
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    font-family: 'Racing Sans One', cursive;;
+    text-align: center;  
+}
+
+.mainContainer {
+    background: azure;
+    padding: 40px;
+    margin: 100px 40px 40px;
+    width: auto;
+    opacity: .94;
+    /*main container drop shadow*/
+        -webkit-box-shadow: 8px 1px 48px 3px rgba(69,168,152,1);
+        -moz-box-shadow: 8px 1px 48px 3px rgba(69,168,152,1);
+        box-shadow: 8px 1px 48px 3px rgba(69,168,152,1);
+}
+
+h1 {
+    color:#409ec8;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 10px;
+}
+
+.instructionsContainer {
+    font-size: 28px;
+    color: midnightblue;
+    padding: 30px;
+    line-height: 1.3;
+}
+
+p {
+    padding: 4px;
+}
+
+#scoreContainer {
+    font-size: 100px;
+    color: #409ec8;
+}
+
+#randomNumber {
+    font-size: 100px;
+    color: firebrick;
+}
+
+#winLossContainer {
+    font-size: 40px;
+    color: #409ec8;
+    float: right;
+    
+}
+
+
+.crystalsContainer{
+    margin-left: auto;
+    margin-right: auto;  
+}
+.crystalImages {
+    width: 180px;
+    height: 180px;
+    mix-blend-mode: multiply;  /*makes white background transparent*/
+}
+
+
+
