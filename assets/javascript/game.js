@@ -2,6 +2,7 @@ $(document).ready(function (){
     
 
 //Fade-in Function
+    // WORKING on an issue that causes the winLoss container to sporadically move to the left upon the win/loss condition
 $(function() {
     $('mainContainer').hide().fadeIn(500);
     $('h1').hide().fadeIn(1000);
